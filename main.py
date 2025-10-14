@@ -14,7 +14,7 @@ detector=HandDetector(maxHands=1,detectionCon=0.8)
 # communication
 #what is dcp look into it
 sock=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
-serverAdressPort=("localhost",8080)
+serverAddressPort=("localhost",8080)
 
 while(True):
     #Get frame from webcam
@@ -31,8 +31,7 @@ while(True):
         for lm in lmList:
             #reverse y direction for unity
             data.extend([lm[0], height - lm[1], lm[2]])
-        sock.sendto(str.encode(str(data)), serverAdressPort)
-
+        sock.sendto(str.encode(str(data)), serverAddressPort)
 
 
     cv2.imshow("Image",img)
