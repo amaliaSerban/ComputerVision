@@ -1,0 +1,55 @@
+# -------------------------------
+# Python / Jupyter project .gitignore
+# -------------------------------
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment and virtualenv
+.venv/
+env/
+venv/
+ENV/
+*.env
+*.venv
+*.conda
+*.egg-info/
+
+# Anaconda specific
+.anaconda_backup/
+anaconda3/
+conda-meta/
+*.conda-build/
+*.conda/
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
+# Data and model files
+data/gestures.csv
+data/models/*.pkl
+data/models/*.joblib
+data/models/*.h5
+*.hdf5
+*.model
+*.onnx
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Output or generated content
+__results__/
+output/
+results/
+plots/
